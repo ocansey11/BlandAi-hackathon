@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ocansey11/BlandAi-hackathon#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "body-parser": "^1.20.3",
     "express": "^4.21.2"
   }

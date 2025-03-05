@@ -4,6 +4,7 @@ from datetime import datetime
 from dotenv import load_dotenv # type: ignore
 import os
 
+
 # Define the path to the JSON file
 file_path = os.path.join('data', 'schedule.json')
 
@@ -17,7 +18,7 @@ load_dotenv()
 
 # Access API key
 api_key = os.getenv("API_KEY")
-ROAST_EVENT = os.getenv("ROAST_EVENT")  
+BLANDAI_EVENT_URL = os.getenv("BLAND_EVENT_URL")  
 
 # Function to parse date and time
 def get_datetime(appointment):
@@ -28,7 +29,7 @@ sorted_appointments = sorted(data["appointments"], key=get_datetime)
 
 # Pick the soonest appointment
 soonest_appointment = sorted_appointments[0] if sorted_appointments else None
-
+print(soonest_appointment)
 # Check if there is a valid appointment
 if soonest_appointment:
     # Define API endpoint and headers
@@ -46,6 +47,7 @@ if soonest_appointment:
     # Check response status
     if response.status_code == 200:
         print("Event triggered successfully:", response.json())
+        get_call_id(response.json()["call"]["call_id"])
     else:
         print("Error triggering event:", response.status_code, response.text)
 else:

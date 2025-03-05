@@ -100,12 +100,16 @@ import requests
 from datetime import datetime
 from dotenv import load_dotenv # type: ignore
 import os
+from fetch_call_details import get_call_id
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Access API key
 api_key = os.getenv("API_KEY")
+
+# Access Event URL
+BLANDAI_EVENT_URL = os.getenv("BLANDAI_EVENT_URL")
 
 # Function to parse date and time
 def get_datetime(appointment):
@@ -116,11 +120,10 @@ sorted_appointments = sorted(data["appointments"], key=get_datetime)
 
 # Pick the soonest appointment
 soonest_appointment = sorted_appointments[0] if sorted_appointments else None
-print(soonest_appointment)
+# print(soonest_appointment)
 # Check if there is a valid appointment
 if soonest_appointment:
     # Define API endpoint and headers
-    BLANDAI_EVENT_URL = "https://api.bland.ai/api/events/d956c237-4b9d-4923-901e-19eb3ec2edad/handler"  # Replace with actual URL
     headers = {
         "Authorization": f"{api_key}",
         "Content-Type": "application/json",
@@ -135,6 +138,7 @@ if soonest_appointment:
     # Check response status
     if response.status_code == 200:
         print("Event triggered successfully:", response.json())
+        get_call_id(response.json()["call"]["call_id"])
     else:
         print("Error triggering event:", response.status_code, response.text)
 else:

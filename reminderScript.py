@@ -17,7 +17,7 @@ load_dotenv()
 
 # Access API key
 api_key = os.getenv("API_KEY")
-book_appointment_url = os.getenv("BOOK_APPOINTMENT_URL")  
+BLANDAI_EVENT_URL = os.getenv("BLAND_EVENT_URL")  
 
 # Function to parse date and time
 def get_datetime(appointment):
@@ -32,7 +32,6 @@ soonest_appointment = sorted_appointments[0] if sorted_appointments else None
 # Check if there is a valid appointment
 if soonest_appointment:
     # Define API endpoint and headers
-    BLANDAI_EVENT_URL = f"{book_appointment_url}"  # Replace with actual URL
     headers = {
         "Authorization": f"{api_key}",
         "Content-Type": "application/json",

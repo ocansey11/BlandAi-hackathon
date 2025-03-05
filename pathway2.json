@@ -1,0 +1,42 @@
+{
+    "pathway": "Site Viewing Confirmation",
+    "steps": [
+      {
+        "step": 1,
+        "action": "Call the client to confirm their availability",
+        "responses": {
+          "confirmed": {
+            "action": "Send property address to the client",
+            "next": "Store confirmation status in knowledge base"
+          },
+          "not_available": {
+            "action": "Ask the client when they might be available",
+            "next": {
+              "response": {
+                "available_slot_provided": {
+                  "action": "Update the calendar with the new date and time",
+                  "next": [
+                    "Store new appointment details in knowledge base",
+                    "Send confirmation message to the client"
+                  ]
+                },
+                "not_sure": {
+                  "action": "Offer to follow up later",
+                  "next": [
+                    "Store pending status in knowledge base",
+                    "Set a reminder for follow-up call"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "knowledge_base_updates": [
+      "Store client confirmation status",
+      "Store rescheduled appointment details",
+      "Track pending clients for follow-ups"
+    ]
+  }
+  

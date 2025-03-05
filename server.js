@@ -27,7 +27,7 @@ app.post('/submit', (req, res) => {
         timestamp: new Date().toISOString()
     };
 
-    const filePath = path.join(__dirname, 'contacts.json');
+    const filePath = path.join(__dirname, 'data/contacts.json');
 
     // Read existing data
     fs.readFile(filePath, 'utf8', (err, data) => {

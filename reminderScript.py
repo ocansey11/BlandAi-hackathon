@@ -4,7 +4,6 @@ from datetime import datetime
 from dotenv import load_dotenv # type: ignore
 import os
 
-
 # Define the path to the JSON file
 file_path = os.path.join('data', 'schedule.json')
 
@@ -15,9 +14,10 @@ with open(file_path, 'r') as f:
 
 load_dotenv()
 
+
 # Access API key
 api_key = os.getenv("API_KEY")
-BLANDAI_EVENT_URL = os.getenv("BLAND_EVENT_URL")  
+ROAST_EVENT = os.getenv("ROAST_EVENT")  
 
 # Function to parse date and time
 def get_datetime(appointment):

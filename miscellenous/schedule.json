@@ -1,0 +1,154 @@
+[
+  {
+      "date": "2025-03-01",
+      "slots": [
+          {
+              "time": "All Day",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-02",
+      "slots": [
+          {
+              "time": "All Day",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-03",
+      "slots": [
+          {
+              "time": "09:00",
+              "status": "Available"
+          },
+          {
+              "time": "11:00",
+              "status": "Available"
+          },
+          {
+              "time": "13:00",
+              "status": "Available"
+          },
+          {
+              "time": "15:00",
+              "status": "Available"
+          },
+          {
+              "time": "17:00",
+              "status": "Available"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-05",
+      "slots": [
+          {
+              "time": "09:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "11:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "13:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "15:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "17:00",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-10",
+      "slots": [
+          {
+              "time": "09:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "11:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "13:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "15:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "17:00",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-15",
+      "slots": [
+          {
+              "time": "09:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "11:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "13:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "15:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "17:00",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-22",
+      "slots": [
+          {
+              "time": "All Day",
+              "status": "Unavailable"
+          }
+      ]
+  },
+  {
+      "date": "2025-03-25",
+      "slots": [
+          {
+              "time": "09:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "11:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "13:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "15:00",
+              "status": "Unavailable"
+          },
+          {
+              "time": "17:00",
+              "status": "Unavailable"
+          }
+      ]
+  }
+]

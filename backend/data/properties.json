@@ -1,0 +1,96 @@
+
+[
+    {
+      "id": 1,
+      "title": "Modern Apartment",
+      "bedrooms": 3,
+      "price": 120000,
+      "currency": "£",
+      "location": "Bournemouth",
+      "description": "Prime location, convenient transportation, three bedrooms.",
+      "image": "/images/house1.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Cozy Villa",
+      "bedrooms": 4,
+      "price": 2500000,
+      "currency": "£",
+      "location": "London",
+      "description": "Large garden, perfect for families.",
+      "image": "./frontend/public/images/h3.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h2.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h2.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h2.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h3.jpeg"
+      
+    },
+    {
+        "id": 7,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h2.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/h4.jpeg"
+      
+    },
+    {
+        "id": 9,
+        "title": "Modern Apartment",
+        "bedrooms": 3,
+        "price": 120000,
+        "currency": "£",
+        "location": "Bournemouth",
+        "description": "Prime location, convenient transportation, three bedrooms.",
+        "image": "./frontend/public/images/house1.jpeg"
+    }
+  ]
+  

@@ -1,0 +1,78 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 页面容器 */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* 头部样式 */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 按钮 */
+.contact-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* 章节标题 */
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* 房产列表 */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* 单个房产卡片 */
+.property {
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.property img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.property h3 {
+    margin: 10px 0;
+}
+
+.property p {
+    font-size: 14px;
+    color: #555;
+}

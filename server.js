@@ -246,10 +246,7 @@ app.use(bodyParser.json());
 // Serve static files
 app.use(express.static(__dirname));
 
-// Serve index.html
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'index.html'));
-// });
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'react.html'));
@@ -268,15 +265,24 @@ app.post('/book-event', async (req, res) => {
     try {
         // Get environment variables for API call
         const apiKey = process.env.API_KEY;
-        const bookEventUrl = process.env.BOOK_EVENT_URL;  // Ensure you define this in .env
+        const bookEventUrl = process.env.BOOK_EVENT_URL;  
+        const bookEventUrl_p = process.env.BOOK_EVENT_URL_PATHWAY;  
 
-        // Make the API call
-        const response = await axios.post(bookEventUrl, { title, description, phone, price }, {
+        // Make the API call Event
+        // const response = await axios.post(bookEventUrl, { title, description, phone, price }, {
+        //     headers: {
+        //         'Authorization': apiKey,
+        //         'Content-Type': 'application/json'
+        //     }
+        // });
+        // Book Event Using Pathway
+        const response = await axios.post(bookEventUrl_p, { title, description, phone, price }, {
             headers: {
                 'Authorization': apiKey,
                 'Content-Type': 'application/json'
             }
         });
+        
 
         if (response.status === 200) {
             res.json({ message: 'Property booking event triggered successfully' });

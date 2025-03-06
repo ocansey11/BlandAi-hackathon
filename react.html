@@ -156,59 +156,62 @@
         <div id="rent-list" class="property-list"></div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch("data/properties.json")
-                .then(response => response.json())
-                .then(data => {
-                    renderProperties("sale-list", data.sale);
-                    renderProperties("apartment-list", data.apartments);
-                    renderProperties("rent-list", data.rent);
-                })
-                .catch(error => console.error("Error loading properties:", error));
+<script>
 
-            function renderProperties(containerId, properties) {
-                const container = document.getElementById(containerId);
-                container.innerHTML = "";
+    document.addEventListener("DOMContentLoaded", () => {
+        fetch("data/properties.json")
+            .then(response => response.json())
+            .then(data => {
+                renderProperties("sale-list", data.sale);
+                renderProperties("apartment-list", data.apartments);
+                renderProperties("rent-list", data.rent);
+            })
+            .catch(error => console.error("Error loading properties:", error));
 
-                properties.forEach(property => {
-                    const propertyDiv = document.createElement("div");
-                    propertyDiv.classList.add("property");
+        function renderProperties(containerId, properties) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = "";
 
-                    propertyDiv.innerHTML = `
-                        <img src="${property.image}" alt="${property.title}">
-                        <h3>${property.title}</h3>
-                        <p>${property.description}, ${property.bedrooms} bedrooms, Price: ${property.currency}${property.price}</p>
-                        <button onclick="window.location.href='tel:${property.phone}'">Call ${property.phone}</button>
-                    `;
+            properties.forEach(property => {
+                const propertyDiv = document.createElement("div");
+                propertyDiv.classList.add("property");
 
-                    container.appendChild(propertyDiv);
-                });
-            }
-        });
+                propertyDiv.innerHTML = `
+                    <img src="${property.image}" alt="${property.title}">
+                    <h3>${property.title}</h3>
+                    <p>${property.description}, ${property.bedrooms} bedrooms, Price: ${property.currency}${property.price}</p>
+                    <button onclick="bookProperty('${property.title}', '${property.description}', '${property.phone}', ${property.price}, '${property.currency}')">
+                        Book Now
+                    </button>
+                `;
 
+                container.appendChild(propertyDiv);
+            });
+        }
+    });
 
-        function bookProperty(title, description, phone, price, currency) {
-    const propertyDetails = {
-        title,
-        description,
-        phone,
-        price: `${currency}${price}`
-    };
+    function bookProperty(title, description, phone, price, currency) {
+        const propertyDetails = {
+            title,
+            description,
+            phone,
+            price: `${currency}${price}`
+        };
 
-    fetch("/book-event", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(propertyDetails)
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert(data.message);
-    })
-    .catch(error => console.error("Error booking property:", error));
-}
-    </script>
+        fetch("/book-event", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(propertyDetails)
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => console.error("Error booking property:", error));
+    }
+
+</script>
 </body>
 </html>

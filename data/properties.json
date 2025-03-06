@@ -1,0 +1,225 @@
+{
+  "sale": [
+    {
+      "id": 1,
+      "title": "Luxury Seaside Villa",
+      "category": "sale",
+      "bedrooms": 5,
+      "price": 3500000,
+      "currency": "£",
+      "location": "Brighton",
+      "description": "Stunning sea view, private pool, and spacious garden.",
+      "image": "./properties/villa1.jpeg",
+      "phone": "+447568123456"
+    },
+    {
+      "id": 2,
+      "title": "Modern City Apartment",
+      "category": "sale",
+      "bedrooms": 2,
+      "price": 550000,
+      "currency": "£",
+      "location": "Manchester",
+      "description": "In the heart of the city with great amenities.",
+      "image": "./properties/apt1.jpeg",
+      "phone": "+447555678912"
+    },
+    {
+      "id": 3,
+      "title": "Cozy Country House",
+      "category": "sale",
+      "bedrooms": 4,
+      "price": 800000,
+      "currency": "£",
+      "location": "Cotswolds",
+      "description": "Beautiful countryside home with large backyard.",
+      "image": "./properties/house2.jpeg",
+      "phone": "+447512345678"
+    },
+    {
+      "id": 4,
+      "title": "Penthouse Suite",
+      "category": "sale",
+      "bedrooms": 3,
+      "price": 1250000,
+      "currency": "£",
+      "location": "London",
+      "description": "Top floor luxury with a skyline view.",
+      "image": "./properties/penthouse.jpeg",
+      "phone": "+447568987654"
+    },
+    {
+      "id": 5,
+      "title": "Spacious Family Home",
+      "category": "sale",
+      "bedrooms": 6,
+      "price": 2200000,
+      "currency": "£",
+      "location": "Birmingham",
+      "description": "Perfect for big families, located in a friendly neighborhood.",
+      "image": "./properties/house3.jpeg",
+      "phone": "+447543210987"
+    },
+    {
+      "id": 6,
+      "title": "Modern Suburban House",
+      "category": "sale",
+      "bedrooms": 4,
+      "price": 900000,
+      "currency": "£",
+      "location": "Liverpool",
+      "description": "Quiet area with excellent transport links.",
+      "image": "./properties/house4.jpeg",
+      "phone": "+447567890432"
+    }
+  ],
+  "rent": [
+    {
+      "id": 7,
+      "title": "Furnished Studio",
+      "category": "rent",
+      "bedrooms": 1,
+      "price": 600,
+      "currency": "£",
+      "location": "Edinburgh",
+      "description": "Ideal for students, utilities included.",
+      "image": "./properties/studio1.jpeg",
+      "phone": "+447678910123"
+    },
+    {
+      "id": 8,
+      "title": "Luxury Apartment Rental",
+      "category": "rent",
+      "bedrooms": 3,
+      "price": 1800,
+      "currency": "£",
+      "location": "London",
+      "description": "High-end rental with gym and pool access.",
+      "image": "./properties/apt2.jpeg",
+      "phone": "+447556789321"
+    },
+    {
+      "id": 9,
+      "title": "Spacious Townhouse",
+      "category": "rent",
+      "bedrooms": 4,
+      "price": 1400,
+      "currency": "£",
+      "location": "Glasgow",
+      "description": "Great family-friendly location near parks.",
+      "image": "./properties/townhouse.jpeg",
+      "phone": "+447589123456"
+    },
+    {
+      "id": 10,
+      "title": "Small Cottage Retreat",
+      "category": "rent",
+      "bedrooms": 2,
+      "price": 950,
+      "currency": "£",
+      "location": "Lake District",
+      "description": "Peaceful countryside rental with nature views.",
+      "image": "./properties/cottage.jpeg",
+      "phone": "+447567891234"
+    },
+    {
+      "id": 12,
+      "title": "Cupboard Under the Stairs",
+      "category": "rent",
+      "bedrooms": 1,
+      "price": 50,
+      "currency": "£",
+      "location": "Privet Drive, Cardiff",
+      "description": "A magically affordable room in a shared house with students. Perfect for aspiring wizards and witches who don’t mind a snug fit. Beware of house-elves! PS:(Ask for Mr. Dursley)",
+      "image": "./properties/sharedhouse.jpeg",
+      "phone": "+447567890123"
+    },
+    {
+      "id": 11,
+      "title": "High-rise Apartment",
+      "category": "rent",
+      "bedrooms": 2,
+      "price": 1300,
+      "currency": "£",
+      "location": "Leeds",
+      "description": "Modern apartment with balcony and city views.",
+      "image": "./properties/highrise.jpeg",
+      "phone": "+447589321678"
+    }
+
+  ],
+  "apartments": [
+    {
+      "id": 13,
+      "title": "City Centre Apartment",
+      "category": "apartment",
+      "bedrooms": 2,
+      "price": 700000,
+      "currency": "£",
+      "location": "Bristol",
+      "description": "Perfectly located near shopping and transport.",
+      "image": "./properties/apt3.jpeg",
+      "phone": "+447512345678"
+    },
+    {
+      "id": 14,
+      "title": "Luxury Loft",
+      "category": "apartment",
+      "bedrooms": 2,
+      "price": 950000,
+      "currency": "£",
+      "location": "London",
+      "description": "Industrial-style loft with stunning decor.",
+      "image": "./properties/loft.jpeg",
+      "phone": "+447534210987"
+    },
+    {
+      "id": 15,
+      "title": "Affordable Flat",
+      "category": "apartment",
+      "bedrooms": 1,
+      "price": 350000,
+      "currency": "£",
+      "location": "Newcastle",
+      "description": "Great for first-time buyers.",
+      "image": "./properties/flat1.jpeg",
+      "phone": "+447567890654"
+    },
+    {
+      "id": 16,
+      "title": "Penthouse Apartment",
+      "category": "apartment",
+      "bedrooms": 3,
+      "price": 2000000,
+      "currency": "£",
+      "location": "Manchester",
+      "description": "Luxury penthouse with a rooftop terrace.",
+      "image": "./properties/penthouse2.jpeg",
+      "phone": "+447578901234"
+    },
+    {
+      "id": 17,
+      "title": "Riverside Flat",
+      "category": "apartment",
+      "bedrooms": 2,
+      "price": 800000,
+      "currency": "£",
+      "location": "Oxford",
+      "description": "Beautiful views of the river, great for nature lovers.",
+      "image": "./properties/flat2.jpeg",
+      "phone": "+447578903456"
+    },
+    {
+      "id": 18,
+      "title": "Modern Duplex",
+      "category": "apartment",
+      "bedrooms": 4,
+      "price": 1200000,
+      "currency": "£",
+      "location": "Cambridge",
+      "description": "Spacious and stylish duplex, perfect for families.",
+      "image": "./properties/duplex.jpeg",
+      "phone": "+447589765432"
+    }
+  ]
+}

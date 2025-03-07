@@ -195,8 +195,12 @@
             title,
             description,
             phone,
-            price: `${currency}${price}`
+            price: `${currency}${price}`,
+            category,
+            location,
+            bedrooms
         };
+
 
         fetch("/book-event", {
             method: "POST",

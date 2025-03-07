@@ -179,8 +179,8 @@
                 propertyDiv.innerHTML = `
                     <img src="${property.image}" alt="${property.title}">
                     <h3>${property.title}</h3>
-                    <p>${property.description}, ${property.bedrooms} bedrooms, Price: ${property.currency}${property.price}</p>
-                    <button onclick="bookProperty('${property.title}', '${property.description}', '${property.phone}', ${property.price}, '${property.currency}')">
+                    <p>${property.description} at ${property.location}. It has ${property.bedrooms} bedrooms, Price: ${property.currency}${property.price}</p>
+                    <button onclick="bookProperty('${property.title}', '${property.description}', '${property.phone}', ${property.price},  '${property.category}', '${property.location}', ${property.bedrooms})">
                         Book Now
                     </button>
                 `;
@@ -190,7 +190,7 @@
         }
     });
 
-    function bookProperty(title, description, phone, price, currency) {
+    function bookProperty(title, description, phone, price, currency, category, location, bedrooms) {
         const propertyDetails = {
             title,
             description,
@@ -202,19 +202,19 @@
         };
 
 
-        fetch("/book-event", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(propertyDetails)
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert(data.message);
-        })
-        .catch(error => console.error("Error booking property:", error));
-    }
+fetch("/book-event", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(propertyDetails)
+})
+.then(response => response.json())
+.then(data => {
+    alert(data.message);
+})
+.catch(error => console.error("Error booking property:", error));
+}
 
 </script>
 </body>

@@ -260,7 +260,7 @@ app.get('/contacts', (req, res) => {
 app.post('/book-event', async (req, res) => {
     console.log("Booking event received:", req.body);
 
-    const { title, description, phone, price } = req.body;
+    const { title, description, phone, price, budget, location,  } = req.body;
 
     try {
         // Get environment variables for API call
@@ -276,7 +276,7 @@ app.post('/book-event', async (req, res) => {
         //     }
         // });
         // Book Event Using Pathway
-        const response = await axios.post(bookEventUrl_p, { title, description, phone, price }, {
+        const response = await axios.post(bookEventUrl, { title, description, phone, price,location, category, bedrooms, currency }, {
             headers: {
                 'Authorization': apiKey,
                 'Content-Type': 'application/json'

@@ -8,7 +8,7 @@ This project is a property listing and booking system integrated with **BlandAI*
 - Fetches property data dynamically from `properties.json`
 - Displays properties in different categories (`sale`, `rent`, `apartments`)
 - **"Book Now"** button triggers an API request instead of opening a phone dialer
-- **Contact Form** lets users submit their details for a **roast event** (a humorous phone call)
+- **Dream House requirement Form** lets users submit their details for a **roast event** (a humorous phone call)
 - Uses **BlandAI** to manage and trigger events
 
 ---
@@ -46,7 +46,7 @@ ROAST_EVENT_URL=https://your-blandai-url.com/roast-event
 ### 🔹 What is BlandAI?
 BlandAI is an intelligent event-driven API system that allows developers to trigger **automated events**. This project integrates with BlandAI to:
 - **Trigger property booking events**
-- **Schedule roast calls when users submit a contact form**
+- **Schedule roast calls when users submit a form**
 
 
 ---
@@ -69,17 +69,6 @@ node server.js
 ```
 
 ### Open in Browser
-Go to `http://localhost:3000` and browse properties.
+Go to `http://localhost:8000` and browse properties.
 
 ---
-
-## 📌 Future Improvements
-- Implement **user authentication** for booking properties
-- Add **payment integration** for property reservations
-- Improve **UI styling** for better user experience
-- Allow users to schedule **custom roast times** instead of instant calls
-
----
-
-## 📞 Contact
-For issues or contributions, open a GitHub issue or reach out to the team. 🚀

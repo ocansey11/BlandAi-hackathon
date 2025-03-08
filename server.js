@@ -43,7 +43,7 @@ app.get('/contacts', (req, res) => {
 app.post('/book-event', async (req, res) => {
     console.log("Booking event received:", req.body);
 
-    const {title, description, phone, price, location, category, bedrooms  } = req.body;
+    const {title, description, phone, price, location, category, bedrooms} = req.body;
 
     try {
         // Get environment variables for API call
